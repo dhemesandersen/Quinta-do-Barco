@@ -5,11 +5,11 @@ import { ChevronDown, Lock, ArrowRight, Shield, MapPin, CheckCircle2, TrendingUp
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
   const images = [
-    "Quinta%20do%20Barco3.jpeg",
-    "Quinta%20do%20Barco21.jpeg",
-    "Quinta%20do%20Barco18.jpeg",
-    "Quinta%20do%20Barco20.jpeg",
-    "Quinta%20do%20Barco22.jpeg"
+    `${import.meta.env.BASE_URL}Quinta%20do%20Barco3.jpeg`,
+    `${import.meta.env.BASE_URL}Quinta%20do%20Barco21.jpeg`,
+    `${import.meta.env.BASE_URL}Quinta%20do%20Barco18.jpeg`,
+    `${import.meta.env.BASE_URL}Quinta%20do%20Barco20.jpeg`,
+    `${import.meta.env.BASE_URL}Quinta%20do%20Barco22.jpeg`
   ];
 
   React.useEffect(() => {
@@ -148,7 +148,7 @@ const SingularAssetSection = () => {
           className="relative aspect-[3/4] w-full"
         >
           <img 
-            src="Quinta%20do%20Barco19.jpeg" 
+            src={`${import.meta.env.BASE_URL}Quinta%20do%20Barco19.jpeg`}
             alt="Quinta do Barco Detalhe" 
             className="w-full h-full object-cover rounded-sm opacity-90 hover:opacity-100 transition-all duration-1000"
           />
@@ -213,7 +213,7 @@ const ValuationSection = () => {
           className="order-2 lg:order-1 relative aspect-square w-full max-w-md mx-auto lg:mx-0"
         >
           <img 
-            src="Quinta%20do%20Barco30.jpeg" 
+            src={`${import.meta.env.BASE_URL}Quinta%20do%20Barco30.jpeg`}
             alt="Avaliação" 
             className="absolute inset-0 w-full h-full object-cover rounded-full opacity-40"
           />
@@ -481,7 +481,7 @@ const ContactSection = () => {
     <section className="py-32 relative border-t border-white/10 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="Quinta%20do%20Barco40.jpeg" 
+          src={`${import.meta.env.BASE_URL}Quinta%20do%20Barco40.jpeg`}
           alt="Quinta do Barco" 
           className="w-full h-full object-cover opacity-20"
         />
